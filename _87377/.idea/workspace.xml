@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6593dabe-7f28-4d48-9909-bbe6a058c34e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_68645/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_68645/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_68645/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_68645/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_68645/_68645.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +32,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/hyukkyo/IdeaProjects/programmers/_87377",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -45,6 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679297752312</updated>
       <workItem from="1679297753183" duration="3014000" />
+      <workItem from="1679306637183" duration="15000" />
     </task>
     <servers />
   </component>
