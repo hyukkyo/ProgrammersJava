@@ -1,9 +1,9 @@
-// 교점에 별 만들
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Main {
+// 교점에 별 만들기
+class Solution {
     private static class Point {
         public final long x, y;
         private Point(long x, long y) {
@@ -13,10 +13,10 @@ public class Main {
     }
 
     private Point intersection(long a1, long b1, long c1, long a2, long b2, long c2) {
-        double x = (double) (b1 * c2 - b2 * c1) / (a1 * b2 - a2 * b1);
-        double y = (double) (a2 * c1 - a1 * c2) / (a1 * b2 - a2 * b1);
+        double x = (double) (b1*c2 - b2*c1) / (a1*b2 - a2*b1);
+        double y = (double) (a2*c1 - a1*c2) / (a1*b2 - a2*b1);
 
-        if (x % 1 != 0 || y % 1 != 0) // 정수일때만 반환
+        if(x%1 != 0 || y%1 != 0)
             return null;
 
         return new Point((long) x, (long) y);
@@ -32,7 +32,6 @@ public class Main {
             if(p.y < y)
                 y = p.y;
         }
-
         return new Point(x, y);
     }
 
@@ -46,27 +45,16 @@ public class Main {
             if(p.y > y)
                 y = p.y;
         }
-
         return new Point(x, y);
     }
 
-    public void main(String[] args) {
-        int[][] line = {
-                {2, -1, 4},
-                {-2, -1, 4},
-                {0, -1, 1},
-                {5, -8, -12},
-                {5, 8, 12}
-        };
-
+    public String[] solution(int[][] line) {
         List<Point> points = new ArrayList<>();
-
         for(int i=0; i<line.length; i++) {
             for(int j=i+1; j<line.length; j++) {
                 Point intersection = intersection(line[i][0], line[i][1], line[i][2],
                         line[j][0], line[j][1], line[j][2]);
-
-                if (intersection != null) {
+                if(intersection != null) {
                     points.add(intersection);
                 }
             }
@@ -93,7 +81,28 @@ public class Main {
         for(int i=0; i<result.length; i++) {
             result[i] = new String(arr[i]);
         }
+        return result;
+    }
+}
 
-        System.out.println(result);
+
+public class Main {
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        int[][] input = {
+                {2,-1,4},
+                {-2,-1,4},
+                {0,-1,1},
+                {5,-8,-12},
+                {5,8,12}
+        };
+        String[] output = s.solution(input);
+//        for(String i : output) {
+//            System.out.println(i);
+//        }
+
+        for(int i=0; i<output.length; i++) {
+            System.out.println(output[i]);
+        }
     }
 }
