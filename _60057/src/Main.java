@@ -9,7 +9,7 @@ class Solution {
 
         for(int startIndex = 0; startIndex < source.length(); startIndex += length) {
             int endIndex = startIndex + length;
-            if(endIndex > source.length()) // 범위 넘어가면 끝까지 한정
+            if(endIndex > source.length()) // 범위 넘어가면 마지막 인덱스로
                 endIndex = source.length();
 
             tokens.add(source.substring(startIndex, endIndex));
@@ -32,6 +32,7 @@ class Solution {
                 if(count > 1)
                     builder.append(count);
                 builder.append(last);
+
                 last = token;
                 count = 1;
             }
@@ -55,6 +56,7 @@ class Solution {
         return min;
     }
 }
+
 public class Main {
     public static void main(String[] args) {
         Solution s = new Solution();
