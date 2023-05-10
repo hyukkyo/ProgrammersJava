@@ -53,6 +53,7 @@ class Solution {
 //        }
 //        return maxArr(point1, point2, point3);
 //    }
+    // 일부 케이스 불만족
 
     private static final int[][] RULES = {
             {1,2,3,4,5},
