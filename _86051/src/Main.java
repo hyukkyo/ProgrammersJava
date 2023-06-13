@@ -15,6 +15,7 @@ class Solution {
             sum += i;
         }
         return sum;
+
     }
 }
 
